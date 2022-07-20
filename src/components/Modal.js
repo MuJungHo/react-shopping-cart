@@ -74,7 +74,7 @@ const Modal = ({ open, closeModal, product }) => {
         <div className="w-full flex justify-between items-center mt-10 pt-4 border-t">
           <div className="flex justify-between items-center w-1/4">
             <button
-              className="text-gray-500 border border-gray-500 py-2 px-4 text-lg rounded-full"
+              className="text-gray-500 border border-gray-500 w-10 h-10 text-lg rounded-full"
               onClick={() => setCount(count + 1)}
             >
               +
@@ -82,7 +82,7 @@ const Modal = ({ open, closeModal, product }) => {
             <span>{count}</span>
 
             <button
-              className="text-gray-500 border border-gray-500 py-2 px-4 text-lg rounded-full"
+              className="text-gray-500 border border-gray-500 w-10 h-10 text-lg rounded-full"
               onClick={() => setCount(count - 1)}
             >
               -
