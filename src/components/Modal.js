@@ -53,25 +53,25 @@ const Modal = ({ open, closeModal, product }) => {
             <p className="font-bold">{product.sale}</p>
           </div>
         </div>
-        <p className="font-bold">尺寸</p>
+        <p className="font-bold mt-5">尺寸</p>
         <ToggleButtonGroup
           data={sizeInitData}
           value={size}
           onChange={setSize}
         />
-        <p className="font-bold">顏色</p>
+        <p className="font-bold mt-5">顏色</p>
         <ToggleButtonGroup
           data={colorInitData}
           value={color}
           onChange={setColor}
         />
-        <p className="font-bold">請選擇購買方式</p>
+        <p className="font-bold mt-5">請選擇購買方式</p>
         <ToggleButtonGroup
           data={payWithPointInitData}
           value={payType}
           onChange={setPayType}
         />
-        <div className="w-full flex justify-between items-center mt-10 pt-4 border-t">
+        <div className="w-full flex justify-between items-center mt-5 pt-4 border-t">
           <div className="flex justify-between items-center w-1/4">
             <button
               className="text-gray-500 border border-gray-500 w-10 h-10 text-lg rounded-full"
