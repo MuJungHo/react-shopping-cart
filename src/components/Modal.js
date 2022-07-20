@@ -53,6 +53,25 @@ const Modal = ({ open, closeModal, product }) => {
             <p className="font-bold">{product.sale}</p>
           </div>
         </div>
+        <p className="font-bold mt-5">本商品適用活動</p>
+        <div className="flex items-start mt-2">
+          <button
+            className="rounded
+            w-1/6
+            py-2 px-4 text-lg text-red-300 bg-red-100"
+          >
+            折價券
+          </button>
+          <div>
+            <p className="text-sm text-gray-400 mx-5 mb-5">
+              折價券資訊折價券資訊
+            </p>
+            <p className="text-sm text-gray-400 mx-5 mb-5">
+              折價券資訊折價券資訊
+            </p>
+            <p className="text-sm text-gray-400 mx-5">折價券資訊折價券資訊</p>
+          </div>
+        </div>
         <p className="font-bold mt-5">尺寸</p>
         <ToggleButtonGroup
           data={sizeInitData}
@@ -66,6 +85,7 @@ const Modal = ({ open, closeModal, product }) => {
           onChange={setColor}
         />
         <p className="font-bold mt-5">請選擇購買方式</p>
+        <p className="text-sm text-gray-400">折價券資訊折價券資訊</p>
         <ToggleButtonGroup
           data={payWithPointInitData}
           value={payType}

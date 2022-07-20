@@ -3,7 +3,7 @@ import Product from "./Product";
 
 const Store = () => {
   return (
-    <div className="w-full flex flex-wrap">
+    <div style={{ maxWidth: 1200 }} className="flex flex-wrap m-auto">
       {items.map((item) => (
         <Product key={item.id} product={item} />
       ))}
