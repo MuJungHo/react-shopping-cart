@@ -24,7 +24,10 @@ const Modal = ({ open, closeModal, product }) => {
     disabled: false
   }));
   const disabledToSubmit =
-    color === undefined || size === undefined || payType === undefined;
+    count < 1 ||
+    color === undefined ||
+    size === undefined ||
+    payType === undefined;
   return (
     <ReactModal
       style={{
@@ -95,7 +98,7 @@ const Modal = ({ open, closeModal, product }) => {
           <div className="flex justify-between items-center w-1/4">
             <button
               className="text-gray-500 border border-gray-500 w-10 h-10 text-lg rounded-full"
-              onClick={() => setCount(count - 1)}
+              onClick={() => count > 0 && setCount(count - 1)}
             >
               -
             </button>
