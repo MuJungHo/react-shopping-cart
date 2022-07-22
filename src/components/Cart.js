@@ -2,7 +2,7 @@ import { useCart } from "../context";
 import React, { useState } from "react";
 import CartItem from "./CartItem";
 const Cart = () => {
-  const { cart } = useCart();
+  const { cart, checkout } = useCart();
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -20,11 +20,14 @@ const Cart = () => {
             <CartItem key={item.productId} item={item} />
           ))}
           <button
-            className="rounded
-            w-1/4
+            onClick={checkout}
+            className="
+            rounded
+            w-full
+            mt-2
             py-2 px-4 text-lg bg-green-500 text-white"
           >
-            Checkout
+            結帳
           </button>
         </div>
       )}

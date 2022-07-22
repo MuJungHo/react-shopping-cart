@@ -23,12 +23,16 @@ export const CartProvider = ({ children }) => {
       return prev.filter((item) => item._id !== id);
     });
   };
-
+  const checkout = () => {
+    setCart([]);
+    alert("已結帳！");
+  };
   var value = {
     cart,
     addToCart,
     removeFromCart,
-    editFromCart
+    editFromCart,
+    checkout
   };
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 };
