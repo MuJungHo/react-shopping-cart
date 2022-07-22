@@ -13,11 +13,11 @@ const Product = ({ product }) => {
   return (
     <div className="lg:w-1/6 w-1/4 p-2">
       <div className="border hover:shadow-md p-2">
-        <div style={{ height: 120 }} className="flex bg-gray-100">
+        <div style={{ height: 120 }} className="w-full flex bg-gray-100">
           <img
             alt=""
             className="m-auto"
-            style={{ minHeight: 120, maxHeight: 120 }}
+            style={{ maxHeight: 120 }}
             src={`/images/${product.id}.jpg`}
           />
         </div>

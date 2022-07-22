@@ -1,16 +1,28 @@
 import { useCart } from "../context";
-
+import React, { useState } from "react";
+import CartItem from "./CartItem";
 const Cart = () => {
   const { cart } = useCart();
+  const [open, setOpen] = useState(false);
   return (
     <>
       <div
-        style={{ maxHeight: "40vh" }}
-        className="fixed bg-white w-44 right-2 bottom-20 shadow-lg border rounded-lg"
+        style={{ maxHeight: "60vh" }}
+        className={
+          " fixed bg-white w-66 p-5 right-2 bottom-20 shadow-lg borderinset-0 transform ease-in-out overflow-auto" +
+          (open
+            ? " transition-opacity opacity-100 duration-500 translate-x-0  "
+            : " transition-all delay-500 opacity-0 translate-x-full  ")
+        }
       >
-        12312321
+        {cart.map((item) => (
+          <CartItem key={item.productId} item={item} />
+        ))}
       </div>
-      <button class="fixed right-2 bottom-2 w-16 h-16 text-white transition-colors duration-150 bg-blue-500 rounded-full hover:bg-blue-800">
+      <button
+        onClick={() => setOpen(!open)}
+        class="fixed right-2 bottom-2 w-16 h-16 text-white transition-colors duration-150 bg-blue-500 rounded-full hover:bg-blue-800"
+      >
         <span class="relative inline-block">
           <svg
             xmlns="http://www.w3.org/2000/svg"

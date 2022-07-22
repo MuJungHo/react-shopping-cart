@@ -52,12 +52,15 @@ const Modal = ({ open, closeModal, product }) => {
     >
       <div className="w-full">
         <div className="flex space-between border-b pb-4 mb-3">
-          <img
-            alt=""
-            className="block"
-            style={{ minHeight: 120, maxHeight: 120 }}
-            src={`/images/${product.id}.jpg`}
-          />
+          <div style={{ height: 120, width: 120 }} className="flex bg-gray-100">
+            <img
+              alt=""
+              className="m-auto"
+              style={{ maxHeight: 120 }}
+              src={`/images/${product.id}.jpg`}
+            />
+          </div>
+
           <div className="ml-4">
             <div className="mb-2">{product.title}</div>
             <p className="line-through text-gray-500">{product.price}</p>
