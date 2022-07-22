@@ -2,6 +2,7 @@ import { useCart } from "../context";
 import React, { useState } from "react";
 
 const CartItem = ({ item }) => {
+  const { editFromCart, removeFromCart } = useCart();
   return (
     <div className="flex mb-2">
       <div
@@ -16,10 +17,17 @@ const CartItem = ({ item }) => {
         />
       </div>
       <div className="text-xs">
-        <p>{`尺寸${item.size}`}</p>
-        <p>{`顏色${item.color}`}</p>
-        <p>{`數量${item.count}`}</p>
-        <p>{`購買方式${item.payType}`}</p>
+        <p>{`商品${item.productId}, ${item.size}號, ${item.color}色`}</p>
+        <p>{`${item.payType}`}</p>
+        <input
+          type="number"
+          value={item.count}
+          onChange={(e) =>
+            e.target.value > 0
+              ? editFromCart(item._id, e.target.value)
+              : removeFromCart(item._id)
+          }
+        />
       </div>
     </div>
   );

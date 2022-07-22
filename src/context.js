@@ -10,16 +10,25 @@ export const CartProvider = ({ children }) => {
   const addToCart = ({ ...args }) => {
     setCart([...cart, { ...args, _id: Date.now() }]);
   };
-  const removeFromCart = (productId) => {
-    setCart((prevCart) => {
-      return [];
+  const editFromCart = (id, count) => {
+    setCart((prev) => {
+      return prev.map((item) => {
+        if (item._id === id) return { ...item, count: count };
+        return item;
+      });
+    });
+  };
+  const removeFromCart = (id) => {
+    setCart((prev) => {
+      return prev.filter((item) => item._id !== id);
     });
   };
 
   var value = {
     cart,
     addToCart,
-    removeFromCart
+    removeFromCart,
+    editFromCart
   };
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 };
