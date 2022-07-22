@@ -7,10 +7,16 @@ const Modal = ({ open, closeModal, product }) => {
   const { addToCart } = useCart();
   const Sizes = [23, 24, 25, 26, 27];
   const Colors = ["白", "黑", "灰", "紫", "綠"];
-  const [color, setColor] = useState();
-  const [size, setSize] = useState();
-  const [payType, setPayType] = useState();
+  const [color, setColor] = useState("");
+  const [size, setSize] = useState("");
+  const [payType, setPayType] = useState("");
   const [count, setCount] = useState(1);
+  React.useEffect(() => {
+    setColor("");
+    setSize("");
+    setPayType("");
+    setCount(1);
+  }, [open]);
   const colorInitData = Colors.map((color) => ({
     value: color,
     disabled: !product.colors.includes(color)
@@ -24,10 +30,7 @@ const Modal = ({ open, closeModal, product }) => {
     disabled: false
   }));
   const disabledToSubmit =
-    count < 1 ||
-    color === undefined ||
-    size === undefined ||
-    payType === undefined;
+    count < 1 || color === "" || size === "" || payType === "";
   return (
     <ReactModal
       style={{
