@@ -6,22 +6,36 @@ const Cart = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div
-        style={{ maxHeight: "60vh" }}
-        className={
-          " fixed bg-white w-66 p-5 right-2 bottom-20 shadow-lg borderinset-0 transform ease-in-out overflow-auto" +
-          (open
-            ? " transition-opacity opacity-100 duration-500 translate-x-0  "
-            : " transition-all delay-500 opacity-0 translate-x-full  ")
-        }
-      >
-        {cart.map((item) => (
-          <CartItem key={item.productId} item={item} />
-        ))}
-      </div>
+      {cart.length > 0 && (
+        <div
+          style={{ maxHeight: "60vh" }}
+          className={
+            " fixed bg-white w-66 p-5 right-2 bottom-20 shadow-lg borderinset-0 transform ease-in-out overflow-auto" +
+            (open
+              ? " transition-opacity opacity-100 duration-500 translate-x-0  "
+              : " transition-all delay-500 opacity-0 translate-x-full  ")
+          }
+        >
+          {cart.map((item) => (
+            <CartItem key={item.productId} item={item} />
+          ))}
+          <button
+            className="rounded
+            w-1/4
+            py-2 px-4 text-lg bg-green-500 text-white"
+          >
+            Checkout
+          </button>
+        </div>
+      )}
       <button
+        disabled={cart.length === 0}
         onClick={() => setOpen(!open)}
-        class="fixed right-2 bottom-2 w-16 h-16 text-white transition-colors duration-150 bg-blue-500 rounded-full hover:bg-blue-800"
+        class={`fixed right-2 bottom-2 w-16 h-16 ${
+          cart.length === 0
+            ? "text-gray-300 bg-gray-200"
+            : "text-white bg-blue-500"
+        } transition-colors duration-150 rounded-full`}
       >
         <span class="relative inline-block">
           <svg
