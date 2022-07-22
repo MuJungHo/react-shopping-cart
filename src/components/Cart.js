@@ -1,17 +1,16 @@
 import { useCart } from "../context";
-import React, { useState } from "react";
+import React from "react";
 import CartItem from "./CartItem";
 const Cart = () => {
-  const { cart, checkout } = useCart();
-  const [open, setOpen] = useState(false);
+  const { cart, checkout, isCartOpen, setCartOpen } = useCart();
   return (
     <>
-      {cart.length > 0 && (
+      {isCartOpen && (
         <div
           style={{ maxHeight: "60vh" }}
           className={
             " fixed bg-white w-66 p-5 right-2 bottom-20 shadow-lg borderinset-0 transform ease-in-out overflow-auto" +
-            (open
+            (isCartOpen
               ? " transition-opacity opacity-100 duration-500 translate-x-0  "
               : " transition-all delay-500 opacity-0 translate-x-full  ")
           }
@@ -33,7 +32,7 @@ const Cart = () => {
       )}
       <button
         disabled={cart.length === 0}
-        onClick={() => setOpen(!open)}
+        onClick={() => setCartOpen((pre) => !pre)}
         class={`fixed right-2 bottom-2 w-16 h-16 ${
           cart.length === 0
             ? "text-gray-300 bg-gray-200"

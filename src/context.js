@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 
 export const CartContext = React.createContext();
 
@@ -6,7 +6,11 @@ export const useCart = () => useContext(CartContext);
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
-
+  const [isCartOpen, setCartOpen] = useState(false);
+  const isCartEmpty = cart.length === 0;
+  useEffect(() => {
+    if (isCartEmpty) setCartOpen(false);
+  }, [isCartEmpty]);
   const addToCart = ({ ...args }) => {
     setCart([...cart, { ...args, _id: Date.now() }]);
   };
@@ -25,13 +29,15 @@ export const CartProvider = ({ children }) => {
   };
   const checkout = () => {
     setCart([]);
-    alert("已結帳！");
+    alert("結帳成功！");
   };
   var value = {
     cart,
     addToCart,
     removeFromCart,
     editFromCart,
+    isCartOpen,
+    setCartOpen,
     checkout
   };
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
