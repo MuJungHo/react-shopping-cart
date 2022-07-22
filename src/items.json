@@ -1,45 +1,15 @@
 [
   {
     "id": 1,
-    "name": "item1",
     "price": 800,
     "sale": 699,
-    "image": "https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80",
-    "title": "短袖牛仔連身洋裝【A-2128】春夏新款韓系修身顯瘦收腰休閒洋裝 連衣裙 過膝長洋裝 長洋裝 韓版洋裝 PAPI",
+    "title": "短袖牛仔連身洋裝/春夏新款韓系修身顯瘦收腰休閒洋裝/連衣裙/過膝長洋裝/長洋裝/韓版洋裝",
     "sizes": [23, 24, 25, 26],
     "colors": ["白", "黑", "灰", "紫"],
     "payWithPoint": [
       {
         "point": "",
-        "price": 600
-      },
-      {
-        "point": "1,000",
-        "price": 589
-      },
-      {
-        "point": "2,000",
-        "price": 549
-      },
-      {
-        "point": "3,000",
-        "price": 449
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "item1",
-    "price": 800,
-    "sale": 699,
-    "image": "https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80",
-    "title": "短袖牛仔連身洋裝【A-2128】春夏新款韓系修身顯瘦收腰休閒洋裝 連衣裙 過膝長洋裝 長洋裝 韓版洋裝 PAPI",
-    "sizes": [23, 24, 25, 26],
-    "colors": ["白", "黑", "灰", "紫"],
-    "payWithPoint": [
-      {
-        "point": "",
-        "price": 600
+        "price": 699
       },
       {
         "point": "1,000",
@@ -57,113 +27,131 @@
   },
   {
     "id": 2,
-    "name": "item1",
-    "price": 800,
-    "sale": 699,
-    "image": "https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80",
-    "title": "短袖牛仔連身洋裝【A-2128】春夏新款韓系修身顯瘦收腰休閒洋裝 連衣裙 過膝長洋裝 長洋裝 韓版洋裝 PAPI",
-    "sizes": [23, 24, 25, 26],
-    "colors": ["白", "黑", "灰", "紫"],
+    "price": 850,
+    "sale": 659,
+    "title": "短袖牛仔連身洋裝/春夏新款韓系修身顯瘦收腰休閒洋裝/連衣裙/過膝長洋裝/長洋裝/韓版洋裝",
+    "sizes": [23, 24],
+    "colors": ["白", "黑", "灰"],
     "payWithPoint": [
       {
         "point": "",
-        "price": 600
+        "price": 659
       },
       {
         "point": "1,000",
-        "price": 589
+        "price": 630
       },
       {
         "point": "2,000",
-        "price": 549
+        "price": 579
       },
       {
         "point": "3,000",
-        "price": 449
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "name": "item1",
-    "price": 800,
-    "sale": 699,
-    "image": "https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80",
-    "title": "短袖牛仔連身洋裝【A-2128】春夏新款韓系修身顯瘦收腰休閒洋裝 連衣裙 過膝長洋裝 長洋裝 韓版洋裝 PAPI",
-    "sizes": [23, 24, 25, 26],
-    "colors": ["白", "黑", "灰", "紫"],
-    "payWithPoint": [
-      {
-        "point": "",
-        "price": 600
-      },
-      {
-        "point": "1,000",
-        "price": 589
-      },
-      {
-        "point": "2,000",
-        "price": 549
-      },
-      {
-        "point": "3,000",
-        "price": 449
+        "price": 479
       }
     ]
   },
   {
     "id": 3,
-    "name": "item1",
-    "price": 800,
-    "sale": 699,
-    "image": "https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80",
-    "title": "短袖牛仔連身洋裝【A-2128】春夏新款韓系修身顯瘦收腰休閒洋裝 連衣裙 過膝長洋裝 長洋裝 韓版洋裝 PAPI",
-    "sizes": [23, 24, 25, 26],
-    "colors": ["白", "黑", "灰", "紫"],
+    "price": 1200,
+    "sale": 799,
+    "title": "短袖牛仔連身洋裝/春夏新款韓系修身顯瘦收腰休閒洋裝/連衣裙/過膝長洋裝/長洋裝/韓版洋裝",
+    "sizes": [23, 25, 26],
+    "colors": ["白", "紫"],
     "payWithPoint": [
       {
         "point": "",
-        "price": 600
+        "price": 799
       },
       {
         "point": "1,000",
-        "price": 589
+        "price": 749
       },
       {
         "point": "2,000",
-        "price": 549
+        "price": 649
       },
       {
         "point": "3,000",
-        "price": 449
+        "price": 549
       }
     ]
   },
   {
-    "id": 8,
-    "name": "item1",
-    "price": 800,
-    "sale": 699,
-    "image": "https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80",
-    "title": "短袖牛仔連身洋裝【A-2128】春夏新款韓系修身顯瘦收腰休閒洋裝 連衣裙 過膝長洋裝 長洋裝 韓版洋裝 PAPI",
+    "id": 4,
+    "price": 600,
+    "sale": 599,
+    "title": "短袖牛仔連身洋裝/春夏新款韓系修身顯瘦收腰休閒洋裝/連衣裙/過膝長洋裝/長洋裝/韓版洋裝",
     "sizes": [23, 24, 25, 26],
     "colors": ["白", "黑", "灰", "紫"],
     "payWithPoint": [
       {
         "point": "",
-        "price": 600
+        "price": 599
       },
       {
         "point": "1,000",
-        "price": 589
+        "price": 459
       },
       {
         "point": "2,000",
-        "price": 549
+        "price": 400
       },
       {
         "point": "3,000",
-        "price": 449
+        "price": 359
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "price": 1100,
+    "sale": 1000,
+    "title": "短袖牛仔連身洋裝/春夏新款韓系修身顯瘦收腰休閒洋裝/連衣裙/過膝長洋裝/長洋裝/韓版洋裝",
+    "sizes": [23, 24, 25, 26],
+    "colors": ["白", "黑", "灰", "紫"],
+    "payWithPoint": [
+      {
+        "point": "",
+        "price": 1000
+      },
+      {
+        "point": "1,000",
+        "price": 900
+      },
+      {
+        "point": "2,000",
+        "price": 800
+      },
+      {
+        "point": "3,000",
+        "price": 700
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "price": 1000,
+    "sale": 750,
+    "title": "短袖牛仔連身洋裝/春夏新款韓系修身顯瘦收腰休閒洋裝/連衣裙/過膝長洋裝/長洋裝/韓版洋裝",
+    "sizes": [23, 24, 25, 26],
+    "colors": ["白", "黑", "灰", "紫"],
+    "payWithPoint": [
+      {
+        "point": "",
+        "price": 750
+      },
+      {
+        "point": "1,000",
+        "price": 700
+      },
+      {
+        "point": "2,000",
+        "price": 650
+      },
+      {
+        "point": "3,000",
+        "price": 600
       }
     ]
   }

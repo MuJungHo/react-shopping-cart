@@ -13,8 +13,13 @@ const Product = ({ product }) => {
   return (
     <div className="lg:w-1/6 w-1/4 p-2">
       <div className="border hover:shadow-md p-2">
-        <div className="flex">
-          <img alt="" className="h-40 m-auto" src={product.image} />
+        <div style={{ height: 120 }} className="flex bg-gray-100">
+          <img
+            alt=""
+            className="m-auto"
+            style={{ minHeight: 120, maxHeight: 120 }}
+            src={`/images/${product.id}.jpg`}
+          />
         </div>
         <div className="p-1">
           <h3 className="text-gray-500 text-xs tracking-widest title-font uppercase mb-1">
